@@ -72,6 +72,8 @@ nav button {
     filter: invert(100%) sepia(86%) saturate(255%) hue-rotate(248deg) brightness(117%) contrast(100%);
 }
 
-
-
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
