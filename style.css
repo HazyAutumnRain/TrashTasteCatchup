@@ -20,6 +20,15 @@ nav ul {
     justify-content: space-around;
 }
 
+nav ul a {
+    color: #551980;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: black;
+}
+
 nav button {
     width: 40px;
     height: 40px;
@@ -88,4 +97,8 @@ nav button:hover {
 
 .dark .towhite {
     filter: invert(0%) sepia(3%) saturate(11%) hue-rotate(24deg) brightness(103%) contrast(103%);
+}
+
+.dark nav ul a:hover {
+    color: white;
 }
