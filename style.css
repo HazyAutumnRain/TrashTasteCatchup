@@ -47,8 +47,12 @@ nav button {
 }
 
 .latestvideocontainer h2 {
-    padding-left: 8%;
     color: #551980;
+}
+
+.latestVideoEmbed {
+    border-radius: 8px;
+    padding-bottom: 12px;
 }
 
 .original {
