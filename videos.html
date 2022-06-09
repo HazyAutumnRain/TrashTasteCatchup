@@ -13,40 +13,37 @@
 </head>
 <body>
     <nav>
-        <a href="/index.html"><img class="original" src="icons/logo.svg" width="75px"></a>
+        <a href="/index.html"><img class="original" src="icons/logo.svg" width="55px" style="padding-top: 4px;"></a>
         <ul>
-            <a><li>Videos</li></a>
-            <a><li>Streams</li></a>
-            <a><li>Tweet Feed</li></a>
+            <a href="/videos.html"><li>Videos</li></a>
+            <a href="/streams.html"><li>Streams</li></a>
+            <a href="/tweets.html"><li>Tweet Feed</li></a>
         </ul>
         <button onclick="modeSwitch()">
-            <img id="modeicon" src="icons/sun.svg" width="25px">
+            <img id="modeicon" class="towhite" src="icons/moon.svg" width="25px">
         </button>
     </nav>
 
     <main>
-        <div class="container">
-            <div id="latestvideocontainer" class="latestvideocontainer">
-                <h2>Latest Podcast Episodes</h2>
-                <iframe class="latestVideoEmbed" vnum='0' cid="UCcmxOGYGF51T1XsqQLewGtQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-                <iframe class="latestVideoEmbed" vnum='1' cid="UCcmxOGYGF51T1XsqQLewGtQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div>
-              <div>
-                <h2 style="color: #551980">CDawgVA</h2>
-                <iframe style="padding-left: 12px;" class="latestVideoEmbed" vnum='0' cid="UCPsZ_0SkFdi551iYTG04R2g" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <div>
-                <h2 style="color: #551980">TheAnimeMan</h2>
-                <iframe style="padding-left: 12px;" class="latestVideoEmbed" vnum='0' cid="UC3ETCazlHenpXEsrEJH-k5A" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-              </div>
-              <div>
-                <h2 style="color: #551980">Gigguk</h2>
-                <iframe style="padding-left: 12px;" class="latestVideoEmbed" vnum='0' cid="UC7dF9qfBMXrSlaaFFDvV_Yg" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
+      <div class="container">
+        <div class="ttcontainer">
+          <a href="https://www.youtube.com/c/TrashTaste"><h2>Trash Taste</h2></a>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UCcmxOGYGF51T1XsqQLewGtQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+          <iframe style="padding-top: 70px;" class="latestVideoEmbed" vnum='1' cid="UCcmxOGYGF51T1XsqQLewGtQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
         </div>
+        <div class="ttcontainer" style="align-items: center">
+          <a style="width: 77px" href="https://www.youtube.com/channel/UCPsZ_0SkFdi551iYTG04R2g"><h2 style="width: 77px">Conner</h2></a>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UCPsZ_0SkFdi551iYTG04R2g" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+          <a style="width: 50px;" href="https://www.youtube.com/user/TheAn1meMan"><h2 style="width: 50px">Joey</h2></a>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UC3ETCazlHenpXEsrEJH-k5A" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+          <a style="width: 65px;" href="https://www.youtube.com/user/gigguk"><h2 style="width: 65px">Garnt</h2></a>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UC7dF9qfBMXrSlaaFFDvV_Yg" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="ttcontainer">
+          <a class="afterdark" href="https://www.youtube.com/channel/UCKaN3mt53ATqRjzalb2ALFQ"><h2 style="width: 250px;">Trash Taste After Dark</h2></a>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UCKaN3mt53ATqRjzalb2ALFQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
     </main>
     
     <script>
