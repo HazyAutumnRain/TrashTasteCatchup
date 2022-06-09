@@ -2,7 +2,7 @@ body {
     font-family: 'roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #551980;
+    color: black;
 }
 
 nav {
@@ -35,9 +35,6 @@ nav button {
     background-color: #551980;
     border: none;
     border-radius: 12px;
-}
-
-nav button:hover {
     cursor: pointer;
 }
 
@@ -79,26 +76,99 @@ nav button:hover {
 }
 
 .ttcontainer h2 {
+    color: #551980;
     width: 130px
 }
 
-/* DARK MODE */
-.dark {
-    background-color: #121212;
+.ttcontainer h2:hover {
+    color: black;
 }
 
-.dark .original:hover {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(264deg) brightness(105%) contrast(108%);
+.indexcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #551980;
 }
 
-.dark .ttcontainer a:hover {
+.indexcontainer h1 {
+    font-size: 64px;
+}
+
+.indexcontainer p {
+    margin-top: -24px;
+}
+
+.linkcontainer {
+    display: flex;
+}
+
+.roundbutton {
+    width: 100px;
+    height: 50px;
+    background-color: #551980;
     color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bolder;
+    border-radius: 12px;
+    margin-right: 12px;
 }
 
-.dark .towhite {
-    filter: invert(0%) sepia(3%) saturate(11%) hue-rotate(24deg) brightness(103%) contrast(103%);
+.roundbutton:hover {
+    transform: scale(1.125);
+    cursor: pointer;
 }
 
-.dark nav ul a:hover {
-    color: white;
+.lighttimeline {
+    display: flex;
+    margin-top: 48px;
+    padding-left: 36px;
+}
+
+.timeline-space {
+    margin-right: 64px;
+}
+
+.darktimeline {
+    display: none;
+    margin-top: 48px;
+    padding-left: 36px;
+}
+
+.streamcontainer {
+    margin-top: 64px;
+    padding-left: 64px;
+}
+
+.streamcontainer iframe {
+    border-radius: 12px;
+    margin-right: 48px;
+}
+
+.str {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.str h1 {
+    color: #551980;
+    margin-bottom: -24px;
+}
+
+.transition-fade {
+	opacity: 1;
+	transition: 1s;
+	transform: translateY(0);
+}
+
+
+html.is-animating .transition-fade {
+	opacity: 0;
+	transform: translateY(100%);
 }
